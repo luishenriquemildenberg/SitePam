@@ -13,15 +13,14 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #01000 ;
 }
 
 a:hover {
-  color: #fec503;
+  color: #01000 ;
 }
-
 .text-primary {
-  color: #fed136 !important;
+  color: #01000;
 }
 
 h1,
@@ -68,22 +67,35 @@ section h3.section-subheading {
   font-size: 18px;
   padding: 20px 40px;
 }
-
+/*
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #01000 !important;
+  border-color: #01000 !important;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: black !important;
+  border-color: black !important;
   color: white;
 }
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+} */
+.btn-secondary {
+  background-color: green !important;
+  border-color: green !important;
 }
 
+.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+  background-color: black !important;
+  border-color: black !important;
+  color: white;
+}
+
+.btn-secondary:active, .btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+} 
 ::-moz-selection {
   background: #fed136;
   text-shadow: none;
@@ -170,12 +182,13 @@ img::-moz-selection {
 }
 
 header.masthead {
+
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/header-bg.jpg"); /*imagem fundo header*/
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
+  background-attachment: fixed;
+  background-position: center cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -224,7 +237,11 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+
+                        /*sobre */
 .service-heading {
+
+  background-attachment: fixed;
   margin: 15px 0;
   text-transform: none;
 }
@@ -250,7 +267,7 @@ header.masthead .intro-text .intro-heading {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(00, 100, 00, 0.9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -389,6 +406,21 @@ header.masthead .intro-text .intro-heading {
   background-color: #212529;
 }
 
+
+
+                /*imagem dvisoria
+
+#content-sobre{
+  background-image: url(img/map-image.png) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 400px;
+  padding-bottom: 400px;
+}*/
+
+                /*historia*/
 .timeline {
   position: relative;
   padding: 0;
@@ -452,9 +484,9 @@ header.masthead .intro-text .intro-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid #0b6623;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: #0b6623;
 }
 
 .timeline > li .timeline-image h4 {
@@ -573,6 +605,12 @@ header.masthead .intro-text .intro-heading {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
+}
+
+                    /*Mulheres team*/
+
+#bg-camon{
+  background-color: #484848;
 }
 
 .team-member {
