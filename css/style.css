@@ -94,15 +94,15 @@ section h3.section-subheading {
 }
 
 .btn-secondary:active, .btn-secondary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(00, 100, 00, 0.5) !important;
 } 
 ::-moz-selection {
-  background: #fed136;
+  background: #green;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #green;
   text-shadow: none;
 }
 
@@ -125,17 +125,17 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: green;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: #green;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #green;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -148,7 +148,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: green;
 }
 
 @media (min-width: 992px) {
@@ -408,17 +408,22 @@ header.masthead .intro-text .intro-heading {
 
 
 
-                /*imagem dvisoria
+                /*imagem dvisoria*/
 
-#content-sobre{
-  background-image: url(img/map-image.png) ;
-  background-position: center center;
+#imagem-divisoria{
+  background-image: url("../img/placacut.jpg"); 
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
+  background-position: center cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   padding-top: 400px;
   padding-bottom: 400px;
-}*/
+
+}
 
                 /*historia*/
 .timeline {
@@ -663,7 +668,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: green;
   box-shadow: none;
 }
 
@@ -733,5 +738,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: green;
 }
