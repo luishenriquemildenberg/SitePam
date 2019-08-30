@@ -240,7 +240,7 @@ header.masthead .intro-text .intro-heading {
 
     text-align: center;
     color: white;
-    background-image: url("../img/header-bg.jpg"); /*imagem fundo header*/
+    background-image: url("../img/header-bg.jpeg"); /*imagem fundo header*/
     max-width: 100%; 
     height: auto;
     background-repeat: no-repeat;
@@ -330,9 +330,9 @@ header.masthead .intro-text .intro-heading {
   background: rgba(00, 100, 00, 0.9);
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+/* #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
-}
+} */
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 20px;
@@ -471,20 +471,7 @@ header.masthead .intro-text .intro-heading {
                 /*imagem dvisoria*/
 
      @media (min-width: 480px) {
-#imagem-divisoria{
-  background-image: url("../img/placacut.jpg"); 
-  width: 100vw !important;
-  height: 100vw;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 400px;
-  padding-bottom: 400px;
-}
+
    }
 
    @media (max-width: 480px) {
@@ -634,7 +621,7 @@ ul.social-buttons li a {
   color: white;
   border-radius: 100%;
   outline: none;
-  background-color: #212529;
+  background-color: #ef9488;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
