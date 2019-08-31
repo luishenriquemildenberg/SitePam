@@ -22,7 +22,7 @@ $corpo .= "Nome: " . $name . "\n";
 $corpo .= "Email: " . $email . "\n";
 $corpo .= "Mensagem: " . $message . "\n";
 
-$email_to = 'contato@camon.eco.br';
+$email_to = 'ateliedapw@gmail.com';
 //não esqueça de substituir este email pelo seu.
 
 $status = mail($email_to, $subject, $corpo, $headers);
