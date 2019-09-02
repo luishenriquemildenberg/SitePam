@@ -1,15 +1,37 @@
 <?php
+require 'Conn.php'; // Pegando o arquivo Conn.php que vai fazer a configuração do banco de dados.
+
 $name = $_POST['name'];
 //pega os dados que foi digitado no ID name.
 
 $email = $_POST['email'];
 //pega os dados que foi digitado no ID email.
 
-$subject = $_POST['subject'];
+$subject = (isset($_POST['subject'])) ? $_POST['subject'] : 'N/A';
 //pega os dados que foi digitado no ID subject.
 
 $message = $_POST['message'];
 //pega os dados que foi digitado no ID message.
+
+$sql = "INSERT INTO tb_contact (c_name, c_email, c_subject, c_message) VALUES (:c_name, :c_email, :c_subject, :c_message)"; // Criando query para executar no Banco de dados.
+$stmt = $Conn -> prepare($sql); 
+$stmt -> bindParam(":c_name", $name);
+$stmt -> bindParam(":c_email", $email);
+$stmt -> bindParam(":c_subject", $subject);
+$stmt -> bindParam(":c_message", $message);
+
+
+$result = $stmt -> execute();
+
+if(!$result) {
+
+  echo "<script> alert('Falha ao enviar o Formulário.'); </script>";
+  // var_dump($stmt -> errorInfo());
+  exit;
+}
+
+echo "<script> alert('Formulário enviado com sucesso!'); </script>";
+exit;
 
 $headers = "From: $email\r\n";
 $headers .= "Reply-To: $email\r\n";
