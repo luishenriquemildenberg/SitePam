@@ -611,10 +611,10 @@ ul.social-buttons li a {
   color: white;
   border-radius: 100%;
   outline: none;
-  background-color: #ef9488;
+  
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #ef9488;
+  background-color: #0077B5;
 }
 
