@@ -1,5 +1,6 @@
 <?php
     require_once 'environment.php';
+    date_default_timezone_set('America/Sao_Paulo');
     /**
      * Arquivo de Conexão com banco de dados 
      * 
