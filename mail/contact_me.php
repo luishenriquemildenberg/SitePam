@@ -52,6 +52,7 @@ try {
   $mail -> setFrom('ateliedapw@gmail.com', "Atelie da Pam"); 
   $mail -> addAddress('hard.henrique@outlook.com', "Luis Henrique"); 
   $mail -> addAddress('allan.cristian@outlook.com.br', "Allan Camargo"); //  
+  $mail -> addAddress($email, $name); //  
   
   
   $mail -> isHTML(true);
