@@ -7,7 +7,9 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
+  h4 {
+    font-size: 2em !important; 
+  }
 p {
   line-height: 1.75;
 }
@@ -260,6 +262,37 @@ header.masthead .intro-text {
   }
 }
 @media (max-width: 480px) {
+  header.masthead .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+
+  header.masthead {
+
+    text-align: center;
+    color: white;
+    background-image: url("../img/costas.jpeg"); /*imagem fundo header*/
+    max-width: 100%; 
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  header.masthead .intro-text .intro-heading {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
+
+@media (max-width: 280px) {
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
