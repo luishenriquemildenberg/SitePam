@@ -10,6 +10,7 @@ body {
   h4 {
     font-size: 2em !important; 
   }
+
 p {
   line-height: 1.75;
 }
@@ -628,11 +629,11 @@ footer ul.quicklinks {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-ul.social-buttons {
+ul.social-media-itens {
   margin-bottom: 0;
 }
 
-ul.social-buttons li a {
+ul.social-media-itens li a {
   font-size: 20px;
   line-height: 40px;
   display: block;
@@ -647,7 +648,7 @@ ul.social-buttons li a {
   
 }
 
-ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #0077B5;
+ul.social-media-itens li a:hover {
+  opacity: 0.8;
 }
 
