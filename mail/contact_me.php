@@ -57,7 +57,7 @@ try {
   
   $mail -> isHTML(true);
   $mail -> Subject = "Contato - Atelie da Pam";
-  $mail -> Body = "Email recebido: " . $email . "<br /> Nome recebido: " . $name . "<br /> Mensagem: " . $message;
+  $mail -> Body = "Email recebido: " . $email . "<br /> Nome recebido: " . $name . "<br /> Mensagem: " . $message . "<hr> Agradeço o Contato :).";
   $mail -> AltBody = "Atualiza essa merda!";
 
   $mail -> send();
