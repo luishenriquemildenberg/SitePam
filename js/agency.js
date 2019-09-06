@@ -15,6 +15,7 @@
     }
   });
 
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -30,7 +31,18 @@
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
+      $('#logo').hide();
+      $('#logo-mob').show();
     } else {
+      if($(window).width() < 993) {
+        $('#logo-mob').show();
+        $('#logo').hide();
+      } else {
+        $('#logo').show();
+        $('#logo-mob').hide();
+
+      }
+
       $("#mainNav").removeClass("navbar-shrink");
     }
   };
